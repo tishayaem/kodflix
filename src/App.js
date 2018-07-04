@@ -20,27 +20,55 @@ class App extends Component {
         <img src={samuraiCover} className="main-poster" alt=" "/>
         </p> */}
         <div className="Titles">
-          <div className="flex-container1">
-            <h1 className="flex-item">
+          
+          <div className="container1">
+            
+            <div className="item">
               <img src={basketsCover} alt=" "/>
-            </h1>
-            <h1 className="flex-item">
+              <div className="item-overlay">
+                <h1>Baskets</h1>
+              </div>
+            </div>
+            
+            <div className="item">
               <img src={twinPeaksCover} alt=" "/>
-            </h1>
-            <h1 className="flex-item">
+              <div className="item-overlay">
+                <h1>Twin Peaks</h1>
+              </div>
+            </div>
+            
+            <div className="item">
               <img src={gameOfThronesCover} alt=" "/>
-            </h1>
+              <div className="item-overlay">
+                <h1>Game of Thrones</h1>
+              </div>
+            </div>
+
           </div>
-          <div className="flex-container2">
-            <h1 className="flex-item">
+          
+          <div className="container2">
+            
+            <div className="item">
               <img src={topOfTheLakeCover} alt=" "/>
-            </h1>
-            <h1 className="flex-item">
+              <div className="item-overlay">
+                <h1>Top of the Lake</h1>
+              </div>
+            </div>
+            
+            <div className="item">
               <img src={winterSunCover} alt=" "/>
-            </h1>
-            <h1 className="flex-item">
+              <div className="item-overlay">
+                <h1>Low Winter Sun</h1>
+              </div>
+            </div>
+            
+            <div className="item">
               <img src={youngPopeCover} alt=" "/>
-            </h1>
+              <div className="item-overlay">
+                <h1>Young Pope</h1>
+              </div>
+            </div>
+         
           </div>
         </div>
 
