@@ -46,21 +46,17 @@ img {
 }
 
 h1 {
-  color: white;
-  font-family: "Helvetica Neue";
+  font-family: 'Arvo', 'Helvetica Neue';
+  color: azure;
   height: 100px;
   margin: 0;
   padding: 20px;
   box-sizing: border-box;
 }
 
-
 .item:hover .item-overlay{
   opacity: 0.8;
 }
-
-
-
 
 @media all and (max-width: 600px) {
   .container1, container2 {
