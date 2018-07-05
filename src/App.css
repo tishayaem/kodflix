@@ -27,7 +27,6 @@ header {
 .item {
   flex: 1;
   position: relative;
-
 } 
 
 img { 
@@ -46,7 +45,7 @@ img {
 }
 
 h1 {
-  font-family: 'Arvo', 'Helvetica Neue';
+  font-family: 'Helvetica Neue';
   color: azure;
   height: 100px;
   margin: 0;
