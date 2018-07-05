@@ -6,6 +6,7 @@ import topOfTheLakeCover from './images/top-of-the-lake-poster.jpg';
 import winterSunCover from './images/winter-sun-poster.jpg';
 import youngPopeCover from './images/young-pope-cover.jpg';
 import Covers from './Covers';
+
 export default class Gallery extends React.Component {
     render() {
         return (
