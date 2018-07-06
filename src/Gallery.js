@@ -12,15 +12,15 @@ export default class Gallery extends React.Component {
         return (
             <div className="Titles">
                 <div className="container1">
-                    <Covers image={basketsCover} title='Baskets' />
-                    <Covers image={twinPeaksCover} title='Twin Peaks' />
-                    <Covers image={gameOfThronesCover} title='Game Of Thrones' />
+                    <Covers image={basketsCover} title='Baskets' id='baskets' type='tv-show'/>
+                    <Covers image={twinPeaksCover} title='Twin Peaks' id='twin-peaks' type='tv-show' />
+                    <Covers image={gameOfThronesCover} title='Game Of Thrones' id='game-of-thrones' type='tv-show'/>
                 </div>
 
                 <div className="container2">
-                    <Covers image={topOfTheLakeCover} title='Top Of The Lake' />
-                    <Covers image={winterSunCover} title='Low Winter Sun' />
-                    <Covers image={youngPopeCover} title='Young Pope' />
+                    <Covers image={topOfTheLakeCover} title='Top Of The Lake' id='top-of-the-lake' type='tv-show'/>
+                    <Covers image={winterSunCover} title='Low Winter Sun' id='low-winter-sun' type='tv-show'/>
+                    <Covers image={youngPopeCover} title='Young Pope' id='young-pope' type='tv-show'/>
                 </div>
             </div>
         )

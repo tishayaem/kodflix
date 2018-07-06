@@ -14,8 +14,10 @@ class App extends Component {
               <h1 className="App-title">Kodflix</h1>
             </header>
           </div>
+          
           <Route exact path="/" component={Gallery} />
           <Route exact path="/details" component={Details} />
+        
         </div>
       </Router>
     );
