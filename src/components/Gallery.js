@@ -1,10 +1,10 @@
 import React from 'react';
-import basketsCover from './images/baskets-poster.jpg';
-import twinPeaksCover from './images/twin-peaks.jpg';
-import gameOfThronesCover from './images/gameOfThrones-poster.jpg';
-import topOfTheLakeCover from './images/top-of-the-lake-poster.jpg';
-import winterSunCover from './images/winter-sun-poster.jpg';
-import youngPopeCover from './images/young-pope-cover.jpg';
+import basketsCover from '../images/baskets-poster.jpg';
+import twinPeaksCover from '../images/twin-peaks.jpg';
+import gameOfThronesCover from '../images/gameOfThrones-poster.jpg';
+import topOfTheLakeCover from '../images/top-of-the-lake-poster.jpg';
+import winterSunCover from '../images/winter-sun-poster.jpg';
+import youngPopeCover from '../images/young-pope-cover.jpg';
 import Covers from './Covers';
 
 export default class Gallery extends React.Component {
