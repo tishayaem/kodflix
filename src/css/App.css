@@ -52,6 +52,9 @@ h1 {
   padding: 20px;
   box-sizing: border-box;
 }
+h2 {
+  background-color: blue;
+}
 
 .item:hover .item-overlay{
   opacity: 0.8;
