@@ -8,12 +8,12 @@ export default class Details extends React.Component {
 
     componentDidMount() {
         setTimeout(
-            () => this.comingSoonMessage(),
+            () => this.setComingSoonMessage(),
             3000
         );
     }
 
-    comingSoonMessage() {
+    setComingSoonMessage() {
         this.setState({
             message: 'Coming Soon!'
         });
