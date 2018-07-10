@@ -10,8 +10,7 @@ export default class Gallery extends React.Component {
                         movieDB.map(function (movie) {
                             return <Covers image={movie.image} title={movie.title} id={movie.id} type={movie.type} />
                         })
-                    }
-                       
+                    }     
                 </div>
             </div>
         )
