@@ -7,7 +7,7 @@ export default class Details extends React.Component {
     }
 
     componentDidMount() {
-        this.timerID = setInterval(
+        setTimeout(
             () => this.newMessage(),
             3000
         );
