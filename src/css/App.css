@@ -1,3 +1,7 @@
+* {
+  /* box-sizing: border-box; */
+}
+
 .App {
   text-align: center;
 }
@@ -7,7 +11,7 @@
 }
 
 header {
-  background-color: black;
+  background-color: #020205;
 }
 
 @keyframes App-logo-spin {
@@ -25,6 +29,7 @@ header {
 }
 
 .item {
+  background-color: #020205;
   flex: 1 1 360px;
   position: relative;
 } 
@@ -46,17 +51,28 @@ img {
 
 h1 {
   font-family: 'Helvetica Neue';
-  color: wheat;
+  color: #eef5db;
   height: 100px;
   margin: 0;
   padding: 20px;
   box-sizing: border-box;
 }
-h2 {
-  background-color: lightcoral;
+
+a {
+  color: #bb3939;
+  font-family: helvetica;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .item:hover .item-overlay{
   opacity: 0.8;
 }
 
+.detailTitle {
+  background-color: #860f44;
+  text-align: center;
+  height: 500px;
+  margin: 50px;
+  padding: 100px;
+}

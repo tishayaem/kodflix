@@ -1,7 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-// import {database} from '../tvShowDatabase'
-export default class Covers extends React.Component {
+export default class Cover extends React.Component {
     render() {
         return (
             <Link to={`${this.props.type}/${this.props.id}`} className='item'>

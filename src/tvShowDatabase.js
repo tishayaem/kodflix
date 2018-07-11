@@ -8,7 +8,7 @@ import youngPopeCover from './images/young-pope-cover.jpg';
 export const movieDB = [
     {
         image: basketsCover,
-        title: 'Basket', 
+        title: 'Baskets', 
         id: 'baskets', 
         type: 'tv-show'
     },

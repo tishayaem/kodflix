@@ -1,30 +1,25 @@
 import React from 'react';
-
+import { movieDB } from '../tvShowDatabase'
 export default class Details extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { message: 'Hello, this will be the details page for each Movie & TV show' };
+        this.state = {
+            movie: {}
+        }
     }
 
     componentDidMount() {
-        setTimeout(
-            () => this.setComingSoonMessage(),
-            3000
-        );
-    }
-
-    setComingSoonMessage() {
+        let movieID = this.props.match.params.id
         this.setState({
-            message: 'Coming Soon!'
-        });
+            movie:  movieDB.find(movie => movie.id === movieID)
+        }) 
     }
 
     render() {
         return (
-            <h2>{this.state.message}</h2>
+            <div className = "detailTitle">
+                <h1>{this.state.movie.title}</h1>
+            </div>
         );
     }
 }
-
-
-

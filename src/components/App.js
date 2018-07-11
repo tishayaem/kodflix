@@ -11,12 +11,16 @@ class App extends Component {
         <div>
           <div className="App">
             <header className="App-header">
-              <h1 className="App-title">Kodflix</h1>
+              <h1 className="App-title">
+                <a href="/"> 
+                  Kodflix
+                </a>
+              </h1>
             </header>
           </div>
           
           <Route exact path="/" component={Gallery} />
-          <Route exact path="/tv-show/:id" component={Details} />
+          <Route exact path="/:type/:id" component={Details} />
         
         </div>
       </Router>
