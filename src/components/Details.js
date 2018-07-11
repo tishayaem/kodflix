@@ -22,10 +22,16 @@ export default class Details extends React.Component {
             return <Redirect to='/notfound' />
         }
 
-        return (
-            <div className = "detailTitle">
-                <h1>{this.state.movie.title}</h1>
-            </div>
-        );
+        else {
+            return (
+                <div className = "detailMovie">
+                    <h1>{this.state.movie.title}</h1>
+                    <div className = "movieInfo">
+                        <div className="item1"><img src={this.state.movie.image} className="detailImage" alt=""/></div>
+                        <div className="item2">{this.state.movie.synopsis}</div>
+                    </div>
+                </div>
+            );
+        }
     }
 }
