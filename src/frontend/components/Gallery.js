@@ -1,18 +1,28 @@
 import React from 'react';
 import Cover from './Cover';
-import { movieDB } from '../tvShowDatabase'
 export default class Gallery extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            movies: []
+        }
+    }
+
+    componentDidMount() {
+        fetch('/rest/shows')
+        .then(res => res.json())
+        .then(movies => this.setState({movies}));
+    }
+    
     render() {
         return (
             <div className="Titles">
                 <div className="container">
-                    {
-                        movieDB.map(function (movie) {
-                            return <Cover image={movie.image} title={movie.title} id={movie.id} type={movie.type} />
-                        })
+                     {
+                        this.state.movies.map(movie => movie.title)              
                     }     
                 </div>
-            </div>
+             </div>
         )
     }
 }

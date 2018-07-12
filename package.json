@@ -16,7 +16,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "start-backend": "nodemon src/backend/app.js"
-
-  }
+    "start-backend": "nodemon src/backend/app.js",
+    "start-all": "npm-run-all -p start start-backend"
+  },
+    "proxy": "http://localhost:3001"
 }
