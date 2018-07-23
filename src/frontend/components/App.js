@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import '../css/App.css';
-import Gallery from './Gallery';
-import Details from './Details';
-import NotFound from './NotFound';
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import "../css/App.css";
+import Gallery from "./Gallery";
+import Details from "./Details";
+import NotFound from "./NotFound";
 
 class App extends Component {
   render() {
@@ -13,9 +13,7 @@ class App extends Component {
           <div className="App">
             <header className="App-header">
               <h1 className="App-title">
-                <a href="/"> 
-                  Kodflix
-                </a>
+                <a href="/">Kodflix</a>
               </h1>
             </header>
           </div>
