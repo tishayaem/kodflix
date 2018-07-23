@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
 import "../css/App.css";
 import Gallery from "./Gallery";
 import Details from "./Details";
@@ -13,7 +13,7 @@ class App extends Component {
           <div className="App">
             <header className="App-header">
               <h1 className="App-title">
-                <a href="/">Kodflix</a>
+                <Link to="/">Kodflix</Link>
               </h1>
             </header>
           </div>
