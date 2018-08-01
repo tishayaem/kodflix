@@ -20,7 +20,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "start-backend": "nodemon src/backend/app.js",
-    "start-dev": "npm-run-all -p start-frontend start-backend"
+    "start-dev": "npm-run-all -p start-frontend start-backend _start-db",
+    "_start-db": "sudo mongod"
   },
   "proxy": "http://localhost:3001"
 }
