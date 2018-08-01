@@ -1,4 +1,4 @@
-export const movieDB = [
+[
   {
     title: "Baskets",
     id: "baskets",
@@ -46,4 +46,4 @@ export const movieDB = [
     synopsis:
       "Newly named Pope Pius XIII, Lenny Belardo (Jude Law) grapples with the inner workings of the Vatican and comes into conflict with Cardinal Voiello (Silvio Orlando), who thought the 47-year-old would more biddable than another cardinal. Instead, Lenny has his own ideas and prefers seeking advice from Sister Mary (Diane Keaton), who raised him at the orphanage. "
   }
-];
+]
