@@ -15,7 +15,7 @@
     "react-scripts": "1.1.4"
   },
   "scripts": {
-    "start": "NODE_ENV=PRD npm-run-all -s build start-backend",
+    "start": "NODE_ENV=production npm-run-all -s build start-backend",
     "start-frontend": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
