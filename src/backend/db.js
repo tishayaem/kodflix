@@ -6,7 +6,7 @@ console.log(process.env.NODE_ENV)
 module.exports = function connectDb() {
   return MongoClient.connect(url)
     .then(function(db) {
-      const dbo = db.db("kodflixDB");
+      const dbo = db.db("kodflix");
       return dbo;
     })
     .catch(function(err) {});
