@@ -1,5 +1,4 @@
 import React from "react";
-import { movieDB } from "../tvShowDatabase";
 import { Redirect } from "react-router-dom";
 import Loading from "./Loading/Loading";
 export default class Details extends React.Component {
@@ -12,9 +11,9 @@ export default class Details extends React.Component {
 
   componentDidMount() {
     let movieID = this.props.match.params.id;
-    this.setState({
-      movie: movieDB.find(movie => movie.id === movieID)
-    });
+    fetch("/rest/shows")
+      .then(res => res.json())
+      .then(movie => this.setState({movie: movie.find(movie => movie.id === movieID)}))
   }
 
   render() {

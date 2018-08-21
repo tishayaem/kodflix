@@ -1,6 +1,8 @@
 const MongoClient = require("mongodb").MongoClient;
-const url = "mongodb://localhost:27017/kodflixDB";
+require('dotenv').config();
 
+let url = process.env[`DB_URL_${process.env.NODE_ENV}`];
+console.log(process.env.NODE_ENV)
 module.exports = function connectDb() {
   return MongoClient.connect(url)
     .then(function(db) {
