@@ -1,14 +1,24 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
+import { Route, Switch, Link, withRouter } from "react-router-dom";
 import "../css/App.css";
 import Gallery from "./Gallery";
 import Details from "./Details";
 import NotFound from "./NotFound";
+import ReactGA from "react-ga";
+
 
 class App extends Component {
+  constructor({history, location}){
+    super();
+    ReactGA.initialize("UA-124401049-1");
+    history.listen(location => this.trackPageView(location));
+
+  }
+  trackPageView(location) {
+    ReactGA.pageview(location.pathname + location.search + location.hash);
+  }
   render() {
     return (
-      <Router>
         <div>
           <div className="App">
             <header className="App-header">
@@ -23,9 +33,8 @@ class App extends Component {
             <Route exact path="/notfound" component={NotFound} />
           </Switch>
         </div>
-      </Router>
     );
   }
 }
 
-export default App;
+export default withRouter(App);
